@@ -13,17 +13,17 @@
 </head>
 <body>
   <div class="sidebar">
-    <input type="checkbox" id="btn">
-    <label for="btn" class="menu-btn">
+    <input type="checkbox" id="sidebar-menu-btn">
+    <label for="sidebar-menu-btn" class="menu-btn">
       <i class="fas fa-bars"></i>
     </label>
     <nav id="menu">
       <div class="title">The Sum of Us</div>
       <ul class="menu-items">
-        <li><a href=""><i class="fas fa-swimming-pool"></i>The Pool</a></li>
-        <li><a href=""><i class="fas fa-graduation-cap"></i>College</a></li>
-        <li><a href=""><i class="fas fa-heartbeat"></i>Healthcare</a></li>
-        <li><a href=""><i class="fas fa-lock"></i>Incarceration</a></li>
+        <li><a href="#" onclick="scrollToDiv('pool-wrapper')"><i class="fas fa-swimming-pool"></i>The Pool</a></li>
+        <li><a href="#" onclick="scrollToDiv('college-wrapper')"><i class="fas fa-graduation-cap"></i>College</a></li>
+        <li><a href="#" onclick="scrollToDiv('health-wrapper')"><i class="fas fa-heartbeat"></i>Healthcare</a></li>
+        <li><a href="#" onclick="scrollToDiv('jail-wrapper')"><i class="fas fa-lock"></i>Incarceration</a></li>
       </ul>
     </nav>
   </div>
@@ -34,19 +34,23 @@
     </video>
     <h1 class="title">The Sum of Us</h1>
     <div class="hero-btn-wrapper">
-      <a href="#" class="scroll-down-btn">scroll down<i class="fas fa-chevron-down"></i></a>
+      <a href="#" class="scroll-down-btn" onclick="scrollToDiv('pool-wrapper')">scroll down<i class="fas fa-chevron-down"></i></a>
     </div>
   </div>
 
   <div class="main-content-wrapper">
-    <div class="water-wrapper">
-      <video src="https://cdn-cf-east.streamable.com/video/mp4/ibes1o.mp4?Expires=1620762600&Signature=mWv8LVriHJzg7S1D2bKBZlsab5WUB5juPskV6jUFj6lCelfAjK1XdJqKp9kNxhlmhXwNgDHWOIqGyH~s0BoyCJ1ur4-yWWEpTB70Ru22bLjevyghazqHTb4UOs~ay48QjKWSUr-AvDGK-HVjtGp4hCHNamofJDr9N-MztfncJwkndebRCnNtbjwep8xlw1uwtTpa2pI0uh8478xvuMeXL3KnZGG8k32UgmsUgbZYSeFlJd-Kg4ZJWaoZkWBhnkBjb5bCApQ9Sj9vsjGk8l7L4c1yG54mLKnyRISrBWah6TekGB3D6xQR0hIrbwc2c91678Zm6LjN~4QV94ptjPS5Mg__&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ" autoplay muted loop id="water"></video>
-    </div>
-
     <div class="section-wrapper-a pool-wrapper">
+      <div class="water-wrapper">
+        <video src="https://cdn-cf-east.streamable.com/video/mp4/ibes1o.mp4?Expires=1620762600&Signature=mWv8LVriHJzg7S1D2bKBZlsab5WUB5juPskV6jUFj6lCelfAjK1XdJqKp9kNxhlmhXwNgDHWOIqGyH~s0BoyCJ1ur4-yWWEpTB70Ru22bLjevyghazqHTb4UOs~ay48QjKWSUr-AvDGK-HVjtGp4hCHNamofJDr9N-MztfncJwkndebRCnNtbjwep8xlw1uwtTpa2pI0uh8478xvuMeXL3KnZGG8k32UgmsUgbZYSeFlJd-Kg4ZJWaoZkWBhnkBjb5bCApQ9Sj9vsjGk8l7L4c1yG54mLKnyRISrBWah6TekGB3D6xQR0hIrbwc2c91678Zm6LjN~4QV94ptjPS5Mg__&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ" autoplay muted loop id="water"></video>
+      </div>
       <div class="section-sidebar">
         <h1 class="section-heading" id="pool-heading">how racism drained the pool</h1>
-        <button type="button" class="audio-btn"><i class="fas fa-play"></i></button>
+        <div class="audio-wrapper">
+          <input type="checkbox" class="audio-btn" id="pool-audio-btn" onchange="playAudio(this)">
+          <label for="pool-audio-btn" class="audio-label">
+            <i class="fas fa-play"></i>
+          </label>
+        </div>
       </div>
       <div class="section-content">
 
@@ -55,7 +59,7 @@
 
     <div class="section-wrapper-b college-wrapper">
       <div class="section-sidebar">
-        <h1 class="section-heading" id="pool-heading">section 2</h1>
+        <h1 class="section-heading" id="college-heading">the college education gap</h1>
       </div>
       <div class="section-content">
 

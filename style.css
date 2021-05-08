@@ -38,11 +38,11 @@ input[type="checkbox"] {
   transition: all 0.3s ease;
 }
 
-#btn:checked ~ .menu-btn {
+#sidebar-menu-btn:checked ~ .menu-btn {
   left: 247px;
 }
 
-#btn:checked ~ .menu-btn i::before {
+#sidebar-menu-btn:checked ~ .menu-btn i::before {
   content: "\f00d"
 }
 
@@ -56,7 +56,7 @@ input[type="checkbox"] {
   transition: all 0.3s ease;
 }
 
-#btn:checked ~ #menu {
+#sidebar-menu-btn:checked ~ #menu {
   left: 0;
 }
 
@@ -184,7 +184,6 @@ input[type="checkbox"] {
 #water {
   position: absolute;
   z-index: -1;
-  width: 100vw;
   height: 100vh;
 }
 
@@ -224,20 +223,27 @@ input[type="checkbox"] {
   font-style: italic;
   font-weight: 400;
   position: relative;
-  padding: 100px;
+  padding: 100px 100px 50px 100px;
   font-size: 72px;
 }
 
-.audio-btn {
+.audio-wrapper {
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
   border: none;
   border-radius: 20%;
   font-size: 2rem;
-  padding: 10px;
   height: 80px;
   width: 80px;
   cursor: pointer;
 }
 
-.fa-play {
-  pointer-events: none;
+.audio-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 80px;
+  width: 80px;
 }
