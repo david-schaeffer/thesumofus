@@ -135,6 +135,10 @@ input[type="checkbox"] {
 }
 
 .scroll-down-btn {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 16px;
   margin-top: 20px;
   color: #f1f1f1;
   position: relative;
@@ -250,11 +254,20 @@ input[type="checkbox"] {
   filter: drop-shadow(0 1em 1em rgba(0, 0, 0, 0.2));
 }
 
-.block-quote p {
+.block-quote p, a {
   font-size: 1.4rem;
   font-family: "Newsreader", serif;
   font-style: italic;
   color: #555;
+}
+
+.block-quote a {
+  color: #888;
+  text-decoration: none;
+}
+
+.block-quote a:hover {
+  text-decoration: underline;
 }
 
 .section-heading {
