@@ -39,7 +39,7 @@ input[type="checkbox"] {
 }
 
 #sidebar-menu-btn:checked ~ .menu-btn {
-  left: 247px;
+  left: 327px;
 }
 
 #sidebar-menu-btn:checked ~ .menu-btn i::before {
@@ -49,10 +49,10 @@ input[type="checkbox"] {
 .sidebar #menu {
   position: fixed;
   height: 100%;
-  width: 270px;
+  width: 350px;
   background: #404040;
   overflow: hidden;
-  left: -270px;
+  left: -350px;
   transition: all 0.3s ease;
 }
 
@@ -215,6 +215,9 @@ input[type="checkbox"] {
 
 .section-content {
   width: 60vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   grid-area: main;
   display: flex;
   flex-direction: column;
@@ -223,8 +226,12 @@ input[type="checkbox"] {
 }
 
 .section-content p {
-  padding: 50px;
-  font-size: 1rem;
+  padding: 70px;
+  font-size: 1.2rem;
+}
+
+.section-content img {
+  max-width: 40%;
 }
 
 .section-content img {
