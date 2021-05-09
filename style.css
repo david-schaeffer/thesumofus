@@ -217,12 +217,19 @@ input[type="checkbox"] {
 .section-content {
   width: 60vw;
   grid-area: main;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: rgba(241,241,241,0.95);
 }
 
 .section-content p {
   padding: 50px;
   font-size: 1rem;
+}
+
+.section-content img {
+  max-width: 40%;
 }
 
 .section-heading {
