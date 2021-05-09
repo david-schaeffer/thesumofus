@@ -17,16 +17,20 @@ function playAudio(e) {
   if(e.checked) {
     switch (audioType) {
       case "pool-audio-btn":
-      poolAudio.play();
-      break;
+        poolAudio.play();
+        break;
+      case "college-audio-btn":
+        collegeAudio.play();
+        break;
     }
   } else {
     switch (audioType) {
       case "pool-audio-btn":
         poolAudio.pause();
         break;
-      default:
-
+      case "college-audio-btn":
+        collegeAudio.pause();
+        break;
     }
   }
 }
