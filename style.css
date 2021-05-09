@@ -183,13 +183,14 @@ input[type="checkbox"] {
   bottom: 0px;
   position: absolute;
   z-index: -1;
-  min-height: 100vh;
+  min-height: 100%;
   min-width: 100vw;
 }
 
 .section-wrapper-a, .section-wrapper-b {
   border-bottom: 5px solid black;
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   width: 100%;
   display: flex;
 }
@@ -214,23 +215,22 @@ input[type="checkbox"] {
 }
 
 .section-content {
+  padding: 25px;
   width: 60vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  grid-area: main;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-evenly;
   background-color: rgba(241,241,241,0.9);
 }
 
 .section-content p {
-  padding: 50px;
+  padding: 25px;
   font-size: 1.1rem;
 }
 
 .section-content img {
+  margin: 25px;
   max-width: 30vw;
   max-height: 30vh;
   border: 2px solid black;
@@ -241,7 +241,20 @@ input[type="checkbox"] {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px 50px 0px 50px;
+}
+
+.block-quote {
+  margin: 25px;
+  padding: 10px;
+  background-color: #ffa;
+  filter: drop-shadow(0 1em 1em rgba(0, 0, 0, 0.2));
+}
+
+.block-quote p {
+  font-size: 1.4rem;
+  font-family: "Newsreader", serif;
+  font-style: italic;
+  color: #555;
 }
 
 .section-heading {
