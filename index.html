@@ -18,9 +18,10 @@
       <i class="fas fa-bars"></i>
     </label>
     <nav id="menu">
-      <div class="title">The Sum of Us</div>
+      <div class="title">Contents</div>
       <ul class="menu-items">
         <li><a href="#" onclick="scrollToDiv('pool-wrapper')"><i class="fas fa-swimming-pool"></i>The Pool</a></li>
+        <li><a href="#" onclick="scrollToDiv('history-wrapper')"><i class="fas fa-landmark"></i>History</a></li>
         <li><a href="#" onclick="scrollToDiv('college-wrapper')"><i class="fas fa-graduation-cap"></i>College</a></li>
         <li><a href="#" onclick="scrollToDiv('health-wrapper')"><i class="fas fa-heartbeat"></i>Healthcare</a></li>
         <li><a href="#" onclick="scrollToDiv('jail-wrapper')"><i class="fas fa-lock"></i>Incarceration</a></li>
@@ -39,6 +40,9 @@
   </div>
 
   <div class="main-content-wrapper">
+    <!-- Content Sections -->
+
+    <!-- POOL -->
     <div class="section-wrapper-a pool-wrapper">
       <div class="water-wrapper">
         <video src="https://cdn-cf-east.streamable.com/video/mp4/ibes1o.mp4?Expires=1620762600&Signature=mWv8LVriHJzg7S1D2bKBZlsab5WUB5juPskV6jUFj6lCelfAjK1XdJqKp9kNxhlmhXwNgDHWOIqGyH~s0BoyCJ1ur4-yWWEpTB70Ru22bLjevyghazqHTb4UOs~ay48QjKWSUr-AvDGK-HVjtGp4hCHNamofJDr9N-MztfncJwkndebRCnNtbjwep8xlw1uwtTpa2pI0uh8478xvuMeXL3KnZGG8k32UgmsUgbZYSeFlJd-Kg4ZJWaoZkWBhnkBjb5bCApQ9Sj9vsjGk8l7L4c1yG54mLKnyRISrBWah6TekGB3D6xQR0hIrbwc2c91678Zm6LjN~4QV94ptjPS5Mg__&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ" autoplay muted loop id="water"></video>
@@ -53,13 +57,46 @@
         </div>
       </div>
       <div class="section-content">
-
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+          aliqua. Integer enim neque volutpat ac tincidunt vitae semper. Massa sed elementum tempus egestas sed. Sed velit
+          dignissim sodales ut eu sem integer vitae. Dictum varius duis at consectetur lorem donec. Odio tempor orci dapibus
+          ultrices. Dictum sit amet justo donec enim. Ultrices gravida dictum fusce ut placerat orci. Ullamcorper velit sed
+          ullamcorper morbi tincidunt ornare massa eget. Sapien pellentesque habitant morbi tristique senectus et.
+          Nibh venenatis cras sed felis eget velit. Erat nam at lectus urna. Dui faucibus in ornare quam viverra orci sagittis
+          eu. In nisl nisi scelerisque eu ultrices vitae. Consectetur libero id faucibus nisl tincidunt eget nullam. Odio
+          euismod lacinia at quis risus. Ultricies mi quis hendrerit dolor magna eget est lorem. Nec dui nunc mattis enim.
+          Senectus et netus et malesuada. Felis bibendum ut tristique et egestas quis.
+        </p>
       </div>
     </div>
 
-    <div class="section-wrapper-b college-wrapper">
+    <!-- HISTORY -->
+    <div class="section-wrapper-b history-wrapper">
       <div class="section-sidebar">
-        <h1 class="section-heading" id="college-heading">the college education gap</h1>
+        <h1 class="section-heading" id="history-heading">how did we get here?</h1>
+        <div class="audio-wrapper">
+          <input type="checkbox" class="audio-btn" id="history-audio-btn" onchange="playAudio(this)">
+          <label for="history-audio-btn" class="audio-label">
+            <i class="fas fa-play"></i>
+          </label>
+        </div>
+      </div>
+      <div class="section-content">
+        <p>Adipiscing enim eu turpis egestas pretium aenean. Libero justo laoreet sit amet cursus sit amet dictum sit. Sagittis
+        eu volutpat odio facilisis mauris sit. Neque sodales ut etiam sit amet nisl purus in. Integer feugiat scelerisque
+        varius morbi. A diam sollicitudin tempor id eu nisl. Ornare lectus sit amet est placerat in egestas erat imperdiet.
+        Pellentesque diam volutpat commodo sed egestas egestas. Sit amet consectetur adipiscing elit. Sit amet dictum sit
+        amet. Mauris a diam maecenas sed enim. Leo a diam sollicitudin tempor id. Vitae nunc sed velit dignissim. Turpis
+        egestas integer eget aliquet nibh. Morbi tincidunt ornare massa eget egestas purus viverra accumsan. Orci dapibus
+        ultrices in iaculis nunc sed augue lacus viverra.</p>
+      </div>
+    </div>
+
+    <!-- COLLEGE -->
+    <div class="section-wrapper-a college-wrapper">
+      <div class="section-sidebar">
+        <h1 class="section-heading" id="college-heading">lowballing higher education</h1>
         <div class="audio-wrapper">
           <input type="checkbox" class="audio-btn" id="college-audio-btn" onchange="playAudio(this)">
           <label for="college-audio-btn" class="audio-label">
@@ -68,7 +105,27 @@
         </div>
       </div>
       <div class="section-content">
+        <pre>
+          Enim eu turpis egestas pretium aenean pharetra magna ac. Magna eget est lorem ipsum dolor sit amet. Sit amet massa vitae tortor condimentum lacinia. Urna cursus eget nunc scelerisque viverra mauris in aliquam sem. Malesuada proin libero nunc consequat. Eu ultrices vitae auctor eu. Eu turpis egestas pretium aenean pharetra magna ac placerat. Amet luctus venenatis lectus magna fringilla. Duis at consectetur lorem donec massa sapien. Tristique et egestas quis ipsum suspendisse ultrices gravida. Dictum non consectetur a erat nam at. Convallis convallis tellus id interdum velit.
+        </pre>
+      </div>
+    </div>
 
+    <!-- HEALTHCARE -->
+    <div class="section-wrapper-b health-wrapper">
+      <div class="section-sidebar">
+        <h1 class="section-heading" id="health-heading">a different kind of pool</h1>
+        <div class="audio-wrapper">
+          <input type="checkbox" class="audio-btn" id="health-audio-btn" onchange="playAudio(this)">
+          <label for="health-audio-btn" class="audio-label">
+            <i class="fas fa-play"></i>
+          </label>
+        </div>
+      </div>
+      <div class="section-content">
+        <pre>
+          Habitant morbi tristique senectus et netus. Eu consequat ac felis donec et odio pellentesque diam volutpat. Eu lobortis elementum nibh tellus molestie nunc non blandit massa. Leo urna molestie at elementum eu. Gravida cum sociis natoque penatibus et magnis dis parturient. Nunc mattis enim ut tellus elementum. Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Eu feugiat pretium nibh ipsum consequat nisl vel pretium lectus. Congue mauris rhoncus aenean vel elit. Id donec ultrices tincidunt arcu non sodales. Mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget. In egestas erat imperdiet sed euismod nisi porta lorem. Et malesuada fames ac turpis egestas sed tempus. Quis hendrerit dolor magna eget est lorem ipsum dolor. Eget duis at tellus at urna condimentum. Praesent elementum facilisis leo vel fringilla est ullamcorper. Suscipit tellus mauris a diam maecenas sed enim ut. Vel pretium lectus quam id leo in. Malesuada fames ac turpis egestas sed tempus urna et. Nibh tortor id aliquet lectus proin.
+        </pre>
       </div>
     </div>
 

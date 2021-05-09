@@ -182,22 +182,20 @@ input[type="checkbox"] {
 }
 
 #water {
+  bottom: 0px;
   position: absolute;
   z-index: -1;
-  height: 100vh;
+  width: 100vw;
 }
 
-.section-wrapper-a {
+.section-wrapper-a, .section-wrapper-b {
+  border-bottom: 5px solid black;
   height: 100vh;
   width: 100%;
   display: flex;
-  flex-direction: row;
 }
 
 .section-wrapper-b {
-  height: 100vh;
-  width: 100%;
-  display: flex;
   flex-direction: row-reverse;
 }
 
@@ -209,13 +207,22 @@ input[type="checkbox"] {
   position: sticky;
   width: 40vw;
   grid-area: sd;
-  background-color: rgba(221,221,221,0.9);
+  background-color: rgba(221,221,221,0.95);
+}
+
+.section-wrapper-b h1 {
+  text-align: right;
 }
 
 .section-content {
   width: 60vw;
   grid-area: main;
-  background-color: rgba(241,241,241,0.9)
+  background-color: rgba(241,241,241,0.95);
+}
+
+.section-content p {
+  padding: 50px;
+  font-size: 1rem;
 }
 
 .section-heading {
@@ -233,6 +240,7 @@ input[type="checkbox"] {
   background-color: #fff;
   border: none;
   border-radius: 20%;
+  margin-top: 10px;
   font-size: 2rem;
   height: 80px;
   width: 80px;

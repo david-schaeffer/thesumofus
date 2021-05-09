@@ -7,11 +7,25 @@ const poolAudio = new Audio("pool_audio.mp3");
 poolAudio.oncanplay = function() {
   if (document.querySelector("#pool-audio-btn").checked) this.play();
 }
+const collegeAudio = new Audio("college_audio.mp3");
+collegeAudio.oncanplay = function() {
+  if (document.querySelector("#college-audio-btn").checked) this.play();
+}
+const healthAudio = new Audio("health_audio.mp3");
+healthAudio.oncanplay = function() {
+  if (document.querySelector("#health-audio-btn").checked) this.play();
+}
+/*const singleStoryAudio = new Audio("single_story_audio.mp3");
+singleStoryAudio.oncanplay = function() {
+  if (document.querySelector("#single-story-audio-btn").checked) this.play();
+}*/
 
 // Functions
 function playAudio(e) {
   const audioType = e.id;
+  console.log(e);
   const iconLabel = e.parentElement.childNodes[3].childNodes[1];
+  console.log(iconLabel);
   iconLabel.classList.toggle("fa-play");
   iconLabel.classList.toggle("fa-pause");
   if(e.checked) {
@@ -22,6 +36,9 @@ function playAudio(e) {
       case "college-audio-btn":
         collegeAudio.play();
         break;
+      case "health-audio-btn":
+        healthAudio.play();
+        break;
     }
   } else {
     switch (audioType) {
@@ -30,6 +47,9 @@ function playAudio(e) {
         break;
       case "college-audio-btn":
         collegeAudio.pause();
+        break;
+      case "health-audio-btn":
+        healthAudio.pause();
         break;
     }
   }
