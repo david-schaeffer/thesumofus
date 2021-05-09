@@ -219,7 +219,6 @@ input[type="checkbox"] {
   width: 60vw;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-evenly;
   background-color: rgba(241,241,241,0.9);
 }
@@ -231,8 +230,8 @@ input[type="checkbox"] {
 
 .section-content img {
   margin: 25px;
-  max-width: 30vw;
-  max-height: 30vh;
+  max-width: 40vw;
+  max-height: 40vh;
   border: 2px solid black;
   filter: drop-shadow(0 1em 1em rgba(0, 0, 0, 0.5));
 }
@@ -246,6 +245,7 @@ input[type="checkbox"] {
 .block-quote {
   margin: 25px;
   padding: 10px;
+  line-height: 24px;
   background-color: #ffa;
   filter: drop-shadow(0 1em 1em rgba(0, 0, 0, 0.2));
 }
