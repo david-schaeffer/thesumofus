@@ -176,16 +176,15 @@ input[type="checkbox"] {
 
 .water-wrapper {
   z-index: -1;
-  top: 0;
-  position: -webkit-sticky;
-  position: sticky;
+  position: relative;
 }
 
 #water {
   bottom: 0px;
   position: absolute;
   z-index: -1;
-  width: 100vw;
+  min-height: 100vh;
+  min-width: 100vw;
 }
 
 .section-wrapper-a, .section-wrapper-b {
@@ -207,7 +206,7 @@ input[type="checkbox"] {
   position: sticky;
   width: 40vw;
   grid-area: sd;
-  background-color: rgba(221,221,221,0.95);
+  background-color: rgba(221,221,221,0.9);
 }
 
 .section-wrapper-b h1 {
@@ -223,7 +222,7 @@ input[type="checkbox"] {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(241,241,241,0.95);
+  background-color: rgba(241,241,241,0.9);
 }
 
 .section-content p {
@@ -236,7 +235,15 @@ input[type="checkbox"] {
 }
 
 .section-content img {
-  max-width: 40%;
+  max-width: 25vw;
+  max-height: 25vh;
+}
+
+.image-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 50px 0px 50px;
 }
 
 .section-heading {
