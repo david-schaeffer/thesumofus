@@ -231,27 +231,15 @@ input[type="checkbox"] {
 }
 
 .section-content img {
-  max-width: 25vw;
-  max-height: 25vh;
+  max-width: 30vw;
+  max-height: 30vh;
 }
 
-<<<<<<< HEAD
-=======
-.section-content img {
-  max-width: 25vw;
-  max-height: 25vh;
-}
-
->>>>>>> add78f057d0099d956764c9db5ef378040f5b31e
 .image-row {
   display: flex;
   flex-direction: row;
   align-items: center;
-<<<<<<< HEAD
-  padding: 0 50px 0 50px;
-=======
   padding: 0px 50px 0px 50px;
->>>>>>> add78f057d0099d956764c9db5ef378040f5b31e
 }
 
 .section-heading {
