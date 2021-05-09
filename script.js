@@ -15,10 +15,14 @@ const healthAudio = new Audio("health_audio.mp3");
 healthAudio.oncanplay = function() {
   if (document.querySelector("#health-audio-btn").checked) this.play();
 }
-/*const singleStoryAudio = new Audio("single_story_audio.mp3");
+const singleStoryAudio = new Audio("single_story_audio.mp3");
 singleStoryAudio.oncanplay = function() {
   if (document.querySelector("#single-story-audio-btn").checked) this.play();
-}*/
+}
+const historyAudio = new Audio("history_audio.mp3");
+historyAudio.oncanplay = function() {
+  if (document.querySelector("#history-audio-btn").checked) this.play();
+}
 
 // Functions
 function playAudio(e) {
@@ -39,6 +43,12 @@ function playAudio(e) {
       case "health-audio-btn":
         healthAudio.play();
         break;
+      case "single-story-audio-btn":
+        singleStoryAudio.play();
+        break;
+      case "history-audio-btn":
+        historyAudio.play();
+        break;
     }
   } else {
     switch (audioType) {
@@ -50,6 +60,12 @@ function playAudio(e) {
         break;
       case "health-audio-btn":
         healthAudio.pause();
+        break;
+      case "single-story-audio-btn":
+        singleStoryAudio.pause();
+        break;
+      case "history-audio-btn":
+        historyAudio.pause();
         break;
     }
   }

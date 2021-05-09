@@ -233,6 +233,8 @@ input[type="checkbox"] {
 .section-content img {
   max-width: 30vw;
   max-height: 30vh;
+  border: 2px solid black;
+  filter: drop-shadow(0 1em 1em rgba(0, 0, 0, 0.5));
 }
 
 .image-row {
