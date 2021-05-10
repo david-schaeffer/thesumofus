@@ -7,29 +7,57 @@ const poolAudio = new Audio("pool_audio.mp3");
 poolAudio.oncanplay = function() {
   if (document.querySelector("#pool-audio-btn").checked) this.play();
 }
+poolAudio.onended = function() {
+  const elem = document.querySelector("#pool-audio-btn");
+  const iconLabel = elem.parentElement.childNodes[3].childNodes[1];
+  iconLabel.classList.toggle("fa-play");
+  iconLabel.classList.toggle("fa-pause");
+}
 const collegeAudio = new Audio("college_audio.mp3");
 collegeAudio.oncanplay = function() {
   if (document.querySelector("#college-audio-btn").checked) this.play();
+}
+collegeAudio.onended = function() {
+  const elem = document.querySelector("#college-audio-btn");
+  const iconLabel = elem.parentElement.childNodes[3].childNodes[1];
+  iconLabel.classList.toggle("fa-play");
+  iconLabel.classList.toggle("fa-pause");
 }
 const healthAudio = new Audio("health_audio.mp3");
 healthAudio.oncanplay = function() {
   if (document.querySelector("#health-audio-btn").checked) this.play();
 }
+healthAudio.onended = function() {
+  const elem = document.querySelector("#health-audio-btn");
+  const iconLabel = elem.parentElement.childNodes[3].childNodes[1];
+  iconLabel.classList.toggle("fa-play");
+  iconLabel.classList.toggle("fa-pause");
+}
 const singleStoryAudio = new Audio("single_story_audio.mp3");
 singleStoryAudio.oncanplay = function() {
   if (document.querySelector("#single-story-audio-btn").checked) this.play();
+}
+singleStoryAudio.onended = function() {
+  const elem = document.querySelector("#single-story-audio-btn");
+  const iconLabel = elem.parentElement.childNodes[3].childNodes[1];
+  iconLabel.classList.toggle("fa-play");
+  iconLabel.classList.toggle("fa-pause");
 }
 const historyAudio = new Audio("history_audio.mp3");
 historyAudio.oncanplay = function() {
   if (document.querySelector("#history-audio-btn").checked) this.play();
 }
+historyAudio.onended = function() {
+  const elem = document.querySelector("#history-audio-btn");
+  const iconLabel = elem.parentElement.childNodes[3].childNodes[1];
+  iconLabel.classList.toggle("fa-play");
+  iconLabel.classList.toggle("fa-pause");
+}
 
 // Functions
 function playAudio(e) {
   const audioType = e.id;
-  console.log(e);
   const iconLabel = e.parentElement.childNodes[3].childNodes[1];
-  console.log(iconLabel);
   iconLabel.classList.toggle("fa-play");
   iconLabel.classList.toggle("fa-pause");
   if(e.checked) {
