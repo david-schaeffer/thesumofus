@@ -5,6 +5,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -236,8 +240,8 @@ input[type="checkbox"] {
 
 .section-content img {
   margin: 25px;
-  max-width: 40vw;
-  max-height: 40vh;
+  max-width: 35vw;
+  max-height: 35vh;
   border: 2px solid black;
   filter: drop-shadow(0 1em 1em rgba(0, 0, 0, 0.5));
 }
