@@ -27,8 +27,8 @@ input[type="checkbox"] {
   height: 45px;
   width: 45px;
   z-index: 999;
-  color: #f2f2f2;
-  background: #4a4a4a;
+  background: #f2f2f2;
+  color: #4a4a4a;
   border: 1px solid #333;
   text-align: center;
   line-height: 45px;
@@ -40,17 +40,18 @@ input[type="checkbox"] {
 
 #sidebar-menu-btn:checked ~ .menu-btn {
   left: 327px;
+  filter: drop-shadow(1em 0 1em rgba(0, 0, 0, 0.5));
 }
 
 #sidebar-menu-btn:checked ~ .menu-btn i::before {
-  content: "\f00d"
+  content: "\f00d";
 }
 
 .sidebar #menu {
   position: fixed;
   height: 100%;
   width: 350px;
-  background: #404040;
+  background: #f2f2f2;
   overflow: hidden;
   left: -350px;
   transition: all 0.3s ease;
@@ -58,20 +59,21 @@ input[type="checkbox"] {
 
 #sidebar-menu-btn:checked ~ #menu {
   left: 0;
+  filter: drop-shadow(1em 0 1em rgba(0, 0, 0, 0.5));
 }
 
 #menu .title {
-  color: #f2f2f2;
+  color: #4a4a4a;
   font-size: 25px;
   font-weight: 600;
   line-height: 85px;
-  background: #333;
+  background: #e2e2e2;
   text-align: center;
 }
 
 #menu .menu-items {
   position: relative;
-  background: #404040;
+  background: #f2f2f2;
   height: 100%;
   width: 100%;
   list-style: none;
@@ -86,7 +88,7 @@ input[type="checkbox"] {
 }
 
 #menu .menu-items li a {
-  color: #fff;
+  color: #000;
   text-decoration: none;
   font-size: 18px;
   font-weight: 500;
