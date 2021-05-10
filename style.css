@@ -238,18 +238,13 @@ input[type="checkbox"] {
   font-size: 1.1rem;
 }
 
-.section-content img {
+.image-row img {
   margin: 25px;
   max-width: 35vw;
   max-height: 35vh;
   border: 2px solid black;
   filter: drop-shadow(0 1em 1em rgba(0, 0, 0, 0.5));
-}
-
-.image-row {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  float: right;
 }
 
 .block-quote {
@@ -257,6 +252,14 @@ input[type="checkbox"] {
   padding: 10px;
   line-height: 24px;
   background-color: #ffa;
+  filter: drop-shadow(0 1em 1em rgba(0, 0, 0, 0.2));
+}
+
+.quote {
+  margin: 25px;
+  padding: 10px;
+  line-height: 24px;
+  background-color: #fff;
   filter: drop-shadow(0 1em 1em rgba(0, 0, 0, 0.2));
 }
 
