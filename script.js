@@ -53,6 +53,16 @@ historyAudio.onended = function() {
   iconLabel.classList.toggle("fa-play");
   iconLabel.classList.toggle("fa-pause");
 }
+const empathyAudio = new Audio("empathy_audio.mp3");
+empathyAudio.oncanplay = function() {
+  if (document.querySelector("#empathy-audio-btn").checked) this.play();
+}
+empathyAudio.onended = function() {
+  const elem = document.querySelector("#empathy-audio-btn");
+  const iconLabel = elem.parentElement.childNodes[3].childNodes[1];
+  iconLabel.classList.toggle("fa-play");
+  iconLabel.classList.toggle("fa-pause");
+}
 
 // Functions
 function playAudio(e) {
@@ -77,6 +87,9 @@ function playAudio(e) {
       case "history-audio-btn":
         historyAudio.play();
         break;
+      case "empathy-audio-btn":
+        empathyAudio.play();
+        break;
     }
   } else {
     switch (audioType) {
@@ -94,6 +107,9 @@ function playAudio(e) {
         break;
       case "history-audio-btn":
         historyAudio.pause();
+        break;
+      case "empathy-audio-btn":
+        empathyAudio.pause();
         break;
     }
   }

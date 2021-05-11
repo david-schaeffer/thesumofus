@@ -73,6 +73,7 @@ input[type="checkbox"] {
   line-height: 85px;
   background: #e2e2e2;
   text-align: center;
+  border-bottom: 1px solid #333;
 }
 
 #menu .menu-items {
@@ -215,7 +216,6 @@ input[type="checkbox"] {
   top: 0;
   height: 100vh;
   width: 40vw;
-  grid-area: sd;
   background-color: rgba(221,221,221,0.9);
 }
 
@@ -250,7 +250,7 @@ input[type="checkbox"] {
 .block-quote {
   margin: 25px;
   padding: 10px;
-  line-height: 24px;
+  line-height: 28px;
   background-color: #ffa;
   filter: drop-shadow(0 1em 1em rgba(0, 0, 0, 0.2));
 }
@@ -258,7 +258,7 @@ input[type="checkbox"] {
 .quote {
   margin: 25px;
   padding: 10px;
-  line-height: 24px;
+  line-height: 28px;
   background-color: #fff;
   filter: drop-shadow(0 1em 1em rgba(0, 0, 0, 0.2));
 }
@@ -311,4 +311,48 @@ input[type="checkbox"] {
   cursor: pointer;
   height: 80px;
   width: 80px;
+}
+
+.footer-wrapper {
+  min-height: 100vh;
+  background-color: #555;
+  color: #ddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.final-quote {
+  background-color: #777;
+  padding: 50px;
+  margin: 100px 300px 100px 300px;
+  filter: drop-shadow(0 1em 1em rgba(0, 0, 0, 0.2));
+}
+
+.final-quote p {
+  font-family: "Newsreader", serif;
+  font-size: 40px;
+  font-style: italic;
+}
+
+.bold {
+  font-family: "Newsreader", serif;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 800;
+  text-shadow: 0 0 0.8em #fff;
+}
+
+.footer {
+  text-align: center;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #aaa;
+}
+
+.footer a:hover {
+  text-decoration: underline;
 }
