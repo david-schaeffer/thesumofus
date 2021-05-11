@@ -326,13 +326,13 @@ input[type="checkbox"] {
 .final-quote {
   background-color: #777;
   padding: 50px;
-  margin: 100px 300px 100px 300px;
+  margin: 100px 100px 100px 100px;
   filter: drop-shadow(0 1em 1em rgba(0, 0, 0, 0.2));
 }
 
 .final-quote p {
   font-family: "Newsreader", serif;
-  font-size: 40px;
+  font-size: 30px;
   font-style: italic;
 }
 
@@ -346,6 +346,7 @@ input[type="checkbox"] {
 
 .footer {
   text-align: center;
+  padding: 25px;
 }
 
 .footer a {
