@@ -127,7 +127,7 @@ input[type="checkbox"] {
 
 @media only screen and (max-width: 600px) {
   .hero-wrapper {
-    background-color: none;
+    background-color: black;
   }
 
   #hero-video {
