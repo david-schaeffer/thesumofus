@@ -123,6 +123,18 @@ input[type="checkbox"] {
   align-items: center;
 }
 
+@media only screen and (max-width: 600px) {
+  .hero-wrapper {
+    background-image: url("http://a.abcnews.com/images/US/GTY-blm-project-ml-7-161226_3x2_1600.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #hero-video {
+    display: none;
+  }
+}
+
 .hero-wrapper .title {
   z-index: 0;
   background: rgba(0,0,0,0.5);
