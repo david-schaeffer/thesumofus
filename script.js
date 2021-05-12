@@ -1,6 +1,7 @@
 // Selectors
-const scrollDownButton = document.querySelector(".hero-btn-wrapper");
-const audioButtons = document.querySelectorAll(".audio-btn");
+const menuButton = document.querySelector("#sidebar-menu-btn");
+const waterWrapper = document.querySelector(".water-wrapper");
+const poolWrapper = document.querySelector(".pool-wrapper");
 
 // Variables
 const poolAudio = new Audio("pool_audio.mp3");
@@ -116,7 +117,18 @@ function playAudio(e) {
 }
 
 function scrollToDiv(divClass) {
+  const top = $("."+divClass).offset().top - 50;
   $('html,body').animate({
-    scrollTop: $("."+divClass).offset().top
- });
+    scrollTop: top
+  });
+  if(menuButton.checked) {
+    menuButton.checked = false;
+  }
+}
+
+function calcHeight() {
+  const hgt = $(".pool-wrapper").height();
+  $(".water-wrapper").css({
+    height: hgt
+  });
 }
