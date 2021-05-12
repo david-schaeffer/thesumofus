@@ -2,6 +2,7 @@
 const menuButton = document.querySelector("#sidebar-menu-btn");
 const waterWrapper = document.querySelector(".water-wrapper");
 const poolWrapper = document.querySelector(".pool-wrapper");
+const width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 
 // Variables
 const poolAudio = new Audio("pool_audio.mp3");
@@ -117,7 +118,8 @@ function playAudio(e) {
 }
 
 function scrollToDiv(divClass) {
-  const top = $("."+divClass).offset().top - 50;
+  const mod = (width <= 900) ? 50 : 0;
+  const top = $("."+divClass).offset().top - mod;
   $('html,body').animate({
     scrollTop: top
   });
