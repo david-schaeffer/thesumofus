@@ -114,8 +114,9 @@ input[type="checkbox"] {
 }
 
 .hero-wrapper {
-  position: relative;
-  background-color: black;
+  background-image: url("https://a.abcnews.com/images/US/GTY-blm-project-ml-7-161226_3x2_1600.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
   height: 100vh;
   width: 100%;
   display: flex;
